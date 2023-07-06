@@ -61,7 +61,7 @@ For demonstration and learning purposes, this is a project for a coffee maker wh
    In the interactive Truffle console, run the following commands:
 
    ```javascript
-   let coffee = await CoffeeMachineErrorChecker.<function name here>()
+   let coffee = await CoffeeMachineErrorChecker.deployed()
    coffee.testRequire(<your input here>)
    coffee.testRevert(<your input here>)
    coffee.testAssert()
