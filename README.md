@@ -1,6 +1,6 @@
 # Minting a Token
 
-This solidity prroject demonstrates the minting of a token where the functions `mint()` and `burn()` are implemented.
+This solidity project demonstrates the minting of a token where the functions `mint()` and `burn()` are implemented.
 
 ## Prerequisites
 1. Install [Node.js](https://nodejs.org/)
