@@ -1,10 +1,11 @@
-# Metacrafters Projects Repository
-This is where I store the project outputs for the courses I've done at metacrafters. Each branch corresponds to a course module project.
+# Minting a Token
 
+This solidity prroject demonstrates the minting of a token where the functions `mint()` and `burn()` are implemented.
 
-## Branches and their corresponding modules from courses
+## Prerequisites
+1. Install [Node.js](https://nodejs.org/)
+2. Install Hardhat `npm install --save-dev hardhat`
 
-| Branch      | Course      | Module      |
-| ----------- | ----------- | ----------- |
-| [Javascript Metacrafters](https://github.com/jrs-a/myAssessments/tree/Javascript-Metacrafters) | [JS PROOF: Beginner Course](https://academy.metacrafters.io/content/intro-javascript) | Javascript Loops and Functions |
-| [Functions and Errors](https://github.com/jrs-a/myAssessments/tree/Functions-and-Errors) | [ETH + AVAX PROOF: Intermediate EVM Course](https://academy.metacrafters.io/content/solidity-avax-intermediate) | Functions and Errors - ETH + AVAX |
+## Deploying the contract
+1. `npx hardhat node`
+2. `npx hardhat run --network localhost scripts/deploy.js`
