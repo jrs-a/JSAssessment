@@ -2,13 +2,17 @@
 pragma solidity ^0.8.9;
 
 //import "hardhat/console.sol";
+import "@openzeppelin/contracts/utils/Counters.sol";
 
 contract Assessment {
     address payable public owner;
     uint256 public balance;
 
-    event Deposit(uint256 amount);
-    event Withdraw(uint256 amount);
+    using Counters for Counters.Counter;
+    Counters.Counter private transactionIds;
+
+    event Deposit(address indexed account, uint256 _amount, uint256 transactionId);
+    event Withdraw(address indexed account, uint256 _amount, uint256 transactionId);
 
     constructor(uint initBalance) payable {
         owner = payable(msg.sender);
@@ -32,7 +36,9 @@ contract Assessment {
         assert(balance == _previousBalance + _amount);
 
         // emit the event
-        emit Deposit(_amount);
+        // emit Deposit(_amount);
+        emit Deposit(msg.sender, _amount, transactionIds.current());
+        transactionIds.increment();
     }
 
     // custom error
@@ -55,6 +61,8 @@ contract Assessment {
         assert(balance == (_previousBalance - _withdrawAmount));
 
         // emit the event
-        emit Withdraw(_withdrawAmount);
+        // emit Withdraw(_withdrawAmount);
+        emit Withdraw(msg.sender, _withdrawAmount, transactionIds.current());
+        transactionIds.increment();
     }
 }

@@ -10,3 +10,9 @@ typechain-types
 cache
 artifacts
 
+# Tailwind
+static/app.css
+
+# NextJS
+.swc/
+.*.env
