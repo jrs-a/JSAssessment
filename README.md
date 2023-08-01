@@ -21,3 +21,9 @@ Typically at `http://localhost:3000/`
 2. Make sure that you are using the localhost as the network in metamask. If not, create a new one and set the RPC URL: `http://127.0.0.1:8545/`, Chain ID: `31337`, and the Currency symbol: `ETH`
 3. Make sure that the imported account is connected to the localhost. Disconnect the other accounts if necessary.
 4. `Clear activity tab data` whenever you are starting a new session.
+
+## Project Screenshots
+<p float="left">
+  <img src="https://github.com/jrs-a/myAssessments/assets/87791386/f0078d52-6e4b-45b4-9279-048a0598163e" width="49%"/>
+  <img src="https://github.com/jrs-a/myAssessments/assets/87791386/a0d82418-a4d3-468e-8a04-020bfb3458ce" width="49%"/>
+</p>
