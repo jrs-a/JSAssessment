@@ -1,12 +1,8 @@
 # Metacrafters Projects Repository
-This is where I store the project outputs for the courses I've done at metacrafters. Each branch corresponds to a course module project.
+This project creates and mints a token with a smart contract written in solidity deployed in [Remix IDE](https://remix.ethereum.org/).
 
+## Description
+This project demonstrates the creation of minting of a Token that is an ERC20 Token and Ownable. This project's smart contract is written in Solidity and deployed in [Remix IDE](https://remix.ethereum.org/). In this smart contract, only the owner of the token can mint tokens to a provided address, while any user is able to burn and transfer tokens.
 
-## Branches and their corresponding modules from courses
-
-| Branch      | Course      | Module      |
-| ----------- | ----------- | ----------- |
-| [Javascript Metacrafters](https://github.com/jrs-a/myAssessments/tree/Javascript-Metacrafters) | [JS PROOF: Beginner Course](https://academy.metacrafters.io/content/intro-javascript) | Javascript Loops and Functions |
-| [Mint a Token](https://github.com/jrs-a/myAssessments/tree/Mint-a-Token) | [ETH PROOF: Beginner EVM Course](https://academy.metacrafters.io/content/solidity-beginner) | Getting Started with Solidity |
-| [Functions and Errors](https://github.com/jrs-a/myAssessments/tree/Functions-and-Errors) | [ETH + AVAX PROOF: Intermediate EVM Course](https://academy.metacrafters.io/content/solidity-avax-intermediate) | Functions and Errors - ETH + AVAX |
-| [Contract Frontend](https://github.com/jrs-a/myAssessments/tree/Contract_Frontend) | [ETH + AVAX PROOF: Intermediate EVM Course](https://academy.metacrafters.io/content/solidity-avax-intermediate) | Smart Contract Management - ETH + AVAX |
+## Getting Started
+Start by creating a new workspace in [Remix IDE](https://remix.ethereum.org/) and select the ERC20 Template when prompted. Check the 'mintable' option. Copy the MyToken.sol code from this repository and then paste it on the remix IDE's MyToken.sol. Compile and Deploy by using the buttons on the left navigation side of the IDE.
