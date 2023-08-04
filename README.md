@@ -9,3 +9,4 @@ Clone this repository using the clone function of the Remix IDE. Compile the con
 
 ## Reminders
 - You must have 2 AVAX tokens on your account. You can get that from [here](https://core.app/tools/testnet-faucet)
+- Make your own `.env` file
